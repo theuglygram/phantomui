@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Playfair+Display:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff80;
+  overflow-x: hidden;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
