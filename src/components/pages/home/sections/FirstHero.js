@@ -97,7 +97,7 @@ const BtnWrapper = styled.div`
 const DownBtn = styled(Button)`
   background: #4e44ce;
   padding: 15px 30px;
-  margin: 0 15px 15px 0;
+  margin: 15px 15px 15px 0;
   font-weight: 700;
   font-size: 20px;
   @media only screen and (max-width: 765px) {
@@ -112,7 +112,9 @@ const WatchBtn = styled(Button)`
   margin: 15px 15px;
   font-weight: 700;
   font-size: 20px;
-  box-shadow: 0px 0px 2px rgb(0 0 0.1);
+  background: #484a50;
+  border: none;
+  outline: none;
 `;
 const Available = styled.p`
   @media only screen and (max-width: 765px) {
@@ -123,7 +125,9 @@ const RightSection = styled.div`
   grid-area: second;
 `;
 const Img = styled.img`
-  width: 100%;
+  /* height: 847px;
+  width: 685px; */
+  max-width: 100%;
 `;
 
 const WatchIcon = styled(AiFillPlayCircle)`
