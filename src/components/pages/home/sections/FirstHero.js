@@ -27,7 +27,9 @@ const FirstHero = () => {
                 Watch
               </WatchBtn>
             </BtnWrapper>
-            <Available></Available>
+            <Available>
+              Available on iOS, Android, Chrome, Brave, and more!
+            </Available>
           </LeftSection>
           <RightSection>
             <Img src={smg} />
@@ -74,12 +76,10 @@ const Description = styled.p`
 const BtnWrapper = styled.div`
   display: flex;
   align-items: center;
-  /* margin: 0 auto;
-   */
-  justify-content: space-between;
   max-width: 400px;
+
   @media only screen and (max-width: 765px) {
-    justify-content: space-between;
+    margin: 0 auto;
   }
   @media only screen and (max-width: 360px) {
     flex-direction: column;
@@ -90,7 +90,7 @@ const BtnWrapper = styled.div`
 const DownBtn = styled(Button)`
   background: #4e44ce;
   padding: 15px 30px;
-  margin: 15px 0;
+  margin: 15px 15px;
   font-weight: 700;
   font-size: 20px;
 `;
@@ -99,22 +99,16 @@ const WatchBtn = styled(Button)`
   align-items: center;
   background: #2c2d30;
   padding: 15px 30px;
-  /* margin: 0 25px; */
+  margin: 15px 15px;
   font-weight: 700;
   font-size: 20px;
   box-shadow: 0px 0px 2px rgb(0 0 0.1);
-
-  /* @media only screen and (max-width: 765px) {
-    margin-left: 10px;
-  }
-  @media only screen and (max-width: 550px) {
-    margin: unset;
-  }
-  @media only screen and (max-width: 450px) {
-    margin: 0 auto;
-  } */
 `;
-const Available = styled.div``;
+const Available = styled.p`
+  @media only screen and (max-width: 765px) {
+    text-align: center;
+  }
+`;
 const RightSection = styled.div`
   grid-area: second;
 `;
