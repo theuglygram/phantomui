@@ -60,6 +60,13 @@ const HeroWrapper = styled.div`
 `;
 const LeftSection = styled.div`
   grid-area: first;
+
+  @media only screen and (max-width: 665px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 const Title = styled(Heading)`
   color: #fff;
@@ -90,9 +97,12 @@ const BtnWrapper = styled.div`
 const DownBtn = styled(Button)`
   background: #4e44ce;
   padding: 15px 30px;
-  margin: 15px 15px;
+  margin: 0 15px 15px 0;
   font-weight: 700;
   font-size: 20px;
+  @media only screen and (max-width: 765px) {
+    margin: 15px 15px;
+  }
 `;
 const WatchBtn = styled(Button)`
   display: flex;
