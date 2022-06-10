@@ -111,12 +111,21 @@ const CardsWrapper = styled.div`
   grid-template-columns: repeat(3, minmax(0, 1fr));
   place-items: center;
   justify-content: center;
-
+  width: 100%;
   @media only screen and (max-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  @media only screen and (max-width: 670px) {
-    grid-template-columns: 1fr;
+  @media only screen and (max-width: 764px) {
+    grid-template-columns: repeat(5, 1fr);
+    place-items: unset;
+    overflow: auto;
+    grid-gap: 100px;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
   }
 `;
 const ItemWrapper = styled.div`
@@ -124,6 +133,11 @@ const ItemWrapper = styled.div`
   margin: 20px;
   padding: 1.5rem;
   border-radius: 0.75rem;
+
+  @media only screen and (max-width: 764px) {
+    max-width: 400px;
+    width: 100%;
+  }
 `;
 
 const Head = styled.h2`

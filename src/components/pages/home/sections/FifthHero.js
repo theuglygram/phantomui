@@ -91,8 +91,8 @@ const ItemWrapper = styled.div`
   }
 `;
 const Icon = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 `;
 
 const Desc = styled.p`
